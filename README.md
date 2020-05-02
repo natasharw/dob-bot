@@ -1,12 +1,12 @@
-# UDP-DOB-Bot
+# DOB Bot
 
-A little UDP chat bot
+A little UDP or TCP chat bot
 
 ## Overview
 
-This small project sets up a UDP server and a UDP client program that interact with each other.   
+This project has two alternative client-server implementations (UDP / TCP) of the same small chat bot.   
 
-Given a date of birth, the server will tell a user what day of the week they were born on:
+Given a date of birth, the chosen server will tell the user what day of the week they were born on:
 
 ```
 Enter your date of birth to find out what day of the week it was
@@ -20,25 +20,30 @@ The server ('127.0.0.1', 3000) replied with 'The day you were born on is Tuesday
 ## Install
 
 ```
-$ git clone https://github.com/natasharw/udp-dob-bot.git
+$ git clone https://github.com/natasharw/dob-bot.git
 ```
 
 ```
-$ cd udp-dob-bot
+$ cd dob-bot
 ```
 
 ## Use
 
-```
-$ python udp_server.py
-```
-
-In a seperate terminal window:
+#### Run in seperate terminal windows and follow on-screen commands
 
 ```
-$ python udp_client.py
+$ python udp/udp_server.py
 ```
-And follow on-screen commands
+```
+$ python udp/udp_client.py
+```
+#### Or
+```
+$ python tcp/tcp_server.py
+```
+```
+$ python tcp/tcp_client.py
+```
 
 ## Test
 
