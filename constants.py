@@ -1,0 +1,3 @@
+MAX_SIZE_BYTES = 65535 # max size of UDP datagram
+SERVER_HOSTNAME = '127.0.0.1'
+SERVER_PORT = 3000
