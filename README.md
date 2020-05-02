@@ -37,7 +37,7 @@ $ python udp/udp_server.py
 ```
 $ python udp/udp_client.py
 ```
-In seperate terminal windows and follow on-screen prompts
+In separate terminal windows and follow on-screen prompts
 
 #### Or to use the TCP bot:
 ```
@@ -46,7 +46,7 @@ $ python tcp/tcp_server.py
 ```
 $ python tcp/tcp_client.py
 ```
-In seperate terminal windows and follow on-screen prompts
+In separate terminal windows and follow on-screen prompts
 
 ## Test
 
