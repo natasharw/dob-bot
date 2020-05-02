@@ -1,5 +1,5 @@
 import logging, socket
-import constants
+from udp import constants
 
 class UdpClient():
     def __init__(self):

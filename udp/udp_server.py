@@ -1,5 +1,5 @@
 import argparse, calendar, datetime, logging, socket
-import constants
+from udp import constants
 
 class UdpServer():
     def __init__(self):

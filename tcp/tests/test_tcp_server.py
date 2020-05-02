@@ -1,5 +1,5 @@
 import unittest
-from tcp_server import TcpServer
+from tcp.tcp_server import TcpServer
 
 class TestTcpServer(unittest.TestCase):
     def setUp(self):

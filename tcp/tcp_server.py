@@ -1,6 +1,6 @@
 import calendar, datetime, logging, socket
-import config
-from tcp_recvall import TcpRecvall
+from tcp import config
+from tcp.tcp_recvall import TcpRecvall
 
 class TcpServer():
     def __init__(self):
@@ -19,17 +19,13 @@ class TcpServer():
             print('Connection from', sockname)
             print('Socket name:', sc.getsockname())
             print('Socket peer:', sc.getpeername())
+
             data = TcpRecvall.send(self, sock=sc, length=10)
             print('Message from client:', data.decode('UTF-8'))
-
             message = data.decode('UTF-8')
-            error = self.validate_input(message)
-            if not error:
-                day_born=self.get_week_day(message)
-                reply_message = 'The day you were born on is {}'.format(day_born)
-            else:
-                reply_message = error
+            day_born=self.get_week_day(message)
 
+            reply_message = 'The day you were born on is {}'.format(day_born)
             reply = reply_message.encode('UTF-8')
             sc.sendall(reply)
             sc.close()

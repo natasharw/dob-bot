@@ -1,5 +1,5 @@
 import unittest
-from udp_server import UdpServer
+from udp.udp_server import UdpServer
 
 class TestUdpServer(unittest.TestCase):
     def setUp(self):
