@@ -32,10 +32,10 @@ $ cd dob-bot
 #### To use the UDP bot:
 
 ```
-$ python udp/udp_server.py
+$ python udp/server.py
 ```
 ```
-$ python udp/udp_client.py
+$ python udp/client.py
 ```
 In separate terminal windows and follow on-screen prompts
 
