@@ -1,9 +1,9 @@
 import unittest
-from tcp.tcp_server import TcpServer
+from tcp.server import Server
 
 class TestTcpServer(unittest.TestCase):
     def setUp(self):
-        self.server = TcpServer()
+        self.server = Server()
 
     def test_get_week_day_1(self):
         dt = '05-05-1992'

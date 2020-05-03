@@ -1,7 +1,7 @@
 import argparse, calendar, datetime, logging, socket
 from udp import constants
 
-class UdpServer():
+class Server():
     def __init__(self):
         self.logger = logging.getLogger()
 
@@ -39,4 +39,4 @@ class UdpServer():
         return (calendar.day_name[born]) 
 
 if __name__ == '__main__':
-    UdpServer().run()
+    Server().run()

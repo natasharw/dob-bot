@@ -1,9 +1,9 @@
 import unittest
-from udp.udp_server import UdpServer
+from udp.server import Server
 
 class TestUdpServer(unittest.TestCase):
     def setUp(self):
-        self.server = UdpServer()
+        self.server = Server()
 
     def test_validate_input_1(self):
         message = '2001'

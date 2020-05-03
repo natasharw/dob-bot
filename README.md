@@ -41,10 +41,10 @@ In separate terminal windows and follow on-screen prompts
 
 #### Or to use the TCP bot:
 ```
-$ python tcp/tcp_server.py
+$ python tcp/server.py
 ```
 ```
-$ python tcp/tcp_client.py
+$ python tcp/client.py
 ```
 In separate terminal windows and follow on-screen prompts
 

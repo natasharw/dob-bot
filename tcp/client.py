@@ -1,8 +1,8 @@
 import datetime, logging, socket
 import config
-from tcp_recvall import TcpRecvall
+from recvall import Recvall
 
-class TcpClient():
+class Client():
     def __init__(self):
         self.logger = logging.getLogger()
             
@@ -23,10 +23,10 @@ class TcpClient():
 
         message = dt.encode('UTF-8')
         s.sendall(message)
-        reply = TcpRecvall.send(self, sock=s, length=31)
+        reply = Recvall.send(self, sock=s, length=31)
         print('The server replied with {!r}'.format(reply.decode('UTF-8')))
         print('Closing socket')
         s.close()
 
 if __name__ == '__main__':
-    TcpClient().run()
+    Client().run()
