@@ -1,7 +1,7 @@
 import logging, socket
 from udp import constants
 
-class UdpClient():
+class Client():
     def __init__(self):
         self.logger = logging.getLogger()
 
@@ -18,4 +18,4 @@ class UdpClient():
             print('The server {} replied with {!r}'.format(address, text))
 
 if __name__ == '__main__':
-    UdpClient().run()
+    Client().run()

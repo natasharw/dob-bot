@@ -1,8 +1,8 @@
 import calendar, datetime, logging, socket
 from tcp import config
-from tcp.tcp_recvall import TcpRecvall
+from tcp.recvall import Recvall
 
-class TcpServer():
+class Server():
     def __init__(self):
         self.logger = logging.getLogger()
  
@@ -20,7 +20,7 @@ class TcpServer():
             print('Socket name:', sc.getsockname())
             print('Socket peer:', sc.getpeername())
 
-            data = TcpRecvall.send(self, sock=sc, length=10)
+            data = Recvall.send(self, sock=sc, length=10)
             print('Message from client:', data.decode('UTF-8'))
             message = data.decode('UTF-8')
             day_born=self.get_week_day(message)
@@ -36,4 +36,4 @@ class TcpServer():
         return (calendar.day_name[born]) 
 
 if __name__ == '__main__':
-    TcpServer().run()
+    Server().run()

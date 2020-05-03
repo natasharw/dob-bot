@@ -1,6 +1,6 @@
 import logging
 
-class TcpRecvall():
+class Recvall():
     def __init__(self):
         self.logger = logging.getLogger()
 
