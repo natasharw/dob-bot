@@ -4,7 +4,7 @@ A little UDP or TCP chat bot
 
 ## Overview
 
-This project has two alternative client-server implementations (UDP / TCP) of the same small chat bot.   
+This project has two alternative client-server implementations (UDP / TCP) of the same teeny chat bot.   
 
 Given a date of birth, the chosen server will tell the user what day of the week they were born on:
 
@@ -26,6 +26,11 @@ $ git clone https://github.com/natasharw/dob-bot.git
 ```
 $ cd dob-bot
 ```
+
+## Prerequisites
+
+* Python 3
+
 
 ## Use
 
